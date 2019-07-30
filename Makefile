@@ -40,8 +40,8 @@ endef
 
 define Package/luci-app-serverchan/postinst
 #!/bin/sh
-	chmod 755 /etc/init.d/serverchan >/dev/null 2>&1
-	chmod 755 /usr/bin/serverchan/serverchan >/dev/null 2>&1
+	chmod 777 /etc/init.d/serverchan >/dev/null 2>&1
+	chmod 777 /usr/bin/serverchan/serverchan >/dev/null 2>&1
 	/etc/init.d/serverchan enable >/dev/null 2>&1
 exit 0
 endef
